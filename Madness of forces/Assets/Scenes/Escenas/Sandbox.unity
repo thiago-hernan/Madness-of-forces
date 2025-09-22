@@ -290,6 +290,7 @@ MonoBehaviour:
   doubleJumpForce: 5
   dashSpeed: 15
   dashDuration: 0.2
+  lastMoveDirection: {x: 1, y: 0}
   cameraTransform: {fileID: 519420032}
   cameraOffset: {x: 0, y: 0, z: -10}
 --- !u!1 &519420028
@@ -394,7 +395,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2106728372575595662, guid: 40aa3e329c6ecd44ea3dafb8c79d9c16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.8
+      value: 12.88
       objectReference: {fileID: 0}
     - target: {fileID: 2106728372575595662, guid: 40aa3e329c6ecd44ea3dafb8c79d9c16, type: 3}
       propertyPath: m_LocalPosition.y
@@ -489,6 +490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1871178889308825796, guid: e8fb587866620c94583e3c72d8537501, type: 3}
   firePoint: {fileID: 1701495183}
+  playerController: {fileID: 104466001}
   fireRate: 0.5
   bulletSpeed: 10
   bulletLifeTime: 1.5

@@ -1,94 +1,81 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
-public class KamikazeEnemy2D : MonoBehaviour
+public class EnemigoKamikaze : MonoBehaviour
 {
-    [Header("Movimiento")]
-    public float speed = 5f;
-    public bool seekPlayerOnStart = true;
+    // Variables que puedes ajustar desde el Inspector de Unity
+    public Transform jugador;      // Para saber a qui√©n seguir.
+    public float velocidad = 4f;   // Qu√© tan r√°pido se mueve.
+    public int vida = 2;           // Los golpes que aguanta antes de destruirse.
 
-    [Header("ExplosiÛn / DaÒo")]
-    public int damage = 50;
-    public GameObject explosionPrefab; // PartÌculas/animaciÛn de explosiÛn (opcional)
-    public float explosionDuration = 2f; // tiempo antes de destruir el prefab de explosiÛn
+    private Rigidbody2D rb;
 
-    [Header("AutodestrucciÛn")]
-    public float lifeTime = 12f; // opcional: para destruir si no llega al jugador
-
-    Rigidbody2D rb;
-    Transform target;
-
+    // Start se ejecuta una sola vez al principio
     void Start()
     {
+        // Obtenemos el componente Rigidbody2D para poder moverlo con f√≠sicas
         rb = GetComponent<Rigidbody2D>();
-        if (seekPlayerOnStart)
-        {
-            GameObject p = GameObject.FindGameObjectWithTag("Player");
-            if (p != null) target = p.transform;
-        }
 
-        if (lifeTime > 0f) Destroy(gameObject, lifeTime);
+        // Busca autom√°ticamente al jugador por su "Tag" si no lo asignaste manualmente
+        if (jugador == null)
+        {
+            GameObject jugadorGO = GameObject.FindGameObjectWithTag("Player");
+            if (jugadorGO != null)
+            {
+                jugador = jugadorGO.transform;
+            }
+            else
+            {
+                Debug.LogError("¬°No se encontr√≥ ning√∫n objeto con el tag 'Player' en la escena!");
+                // Desactivamos el enemigo si no hay jugador para evitar errores
+                this.enabled = false;
+            }
+        }
     }
 
+    // FixedUpdate es ideal para c√°lculos de f√≠sica como el movimiento
     void FixedUpdate()
     {
-        if (target == null)
-        {
-            // intenta encontrar jugador cada cierto tiempo (robusto si el jugador aparece luego)
-            GameObject p = GameObject.FindGameObjectWithTag("Player");
-            if (p != null) target = p.transform;
-            else return;
-        }
+        if (jugador == null) return; // Si no hay jugador, no hace nada.
 
-        Vector2 direction = (target.position - transform.position);
-        rb.velocity = direction.normalized * speed;
-        // opcional: rotar para mirar movimiento
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
+        // --- L√≥gica de Movimiento y Rotaci√≥n ---
+
+        // 1. Calcular la direcci√≥n hacia el jugador
+        // Restamos la posici√≥n del jugador menos nuestra posici√≥n para obtener el vector que nos une
+        Vector2 direccion = (Vector2)jugador.position - rb.position;
+        direccion.Normalize(); // Normalizamos para que la velocidad sea constante
+
+        // 2. Mover el enemigo hacia esa direcci√≥n
+        // Aplicamos una velocidad constante al Rigidbody
+        rb.velocity = direccion * velocidad;
+
+        // 3. Calcular el √°ngulo para apuntar
+        // Usamos Atan2 para obtener el √°ngulo en radianes y lo convertimos a grados
+        float angulo = Mathf.Atan2(direccion.y, direccion.x) * Mathf.Rad2Deg;
+
+        // 4. Aplicar la rotaci√≥n
+        // Le restamos 90 grados porque en Unity, los sprites "apuntan hacia arriba" (eje Y) por defecto.
+        // Esto alinea la "punta" de la c√°psula con la direcci√≥n de movimiento.
+        rb.rotation = angulo - 90f;
     }
 
-    // Recomendado: usar Collider2D con isTrigger = true para detecciÛn de contacto.
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            // Aplicar daÒo
-            PlayerHealth ph = other.GetComponent<PlayerHealth>();
-            if (ph != null)
-            {
-                ph.TakeDamage(damage);
-            }
+    // --- L√≥gica de Vida y Muerte ---
 
-            Explode();
-        }
-        else
+    // Esta es una funci√≥n P√öBLICA, lo que significa que otros scripts (como el de la bala) pueden llamarla.
+    public void RecibirDa√±o(int cantidad)
+    {
+        vida -= cantidad; // Restamos la vida
+
+        if (vida <= 0)
         {
-            // Si quieres que colisione con otras capas y explote:
-            // if (other.gameObject.layer == LayerMask.NameToLayer("Ground")) Explode();
+            Morir(); // Si la vida llega a 0 o menos, llamamos a la funci√≥n de morir
         }
     }
 
-    // Alternativa si NO usas trigger (Collider2D.isTrigger = false):
-    // void OnCollisionEnter2D(Collision2D collision) { if (collision.gameObject.CompareTag("Player")) { ... Explode(); } }
-
-    void Explode()
+    void Morir()
     {
-        // Instanciar FX
-        if (explosionPrefab != null)
-        {
-            GameObject fx = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-            Destroy(fx, explosionDuration);
-        }
-
-        // AquÌ podrÌas aÒadir daÒo por ·rea usando Physics2D.OverlapCircleAll si quieres afectar a varios.
-        Destroy(gameObject);
-    }
-
-    // MÈtodo p˙blico para forzar la explosiÛn desde otro script (por ejemplo, daÒo por jugadores)
-    public void ForceExplode()
-    {
-        Explode();
+        // ¬°Boom! üí•
+        Destroy(gameObject); // Destruye el GameObject de este enemigo.
     }
 }

@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\Madness of forces\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|c:\\users\\walte\\onedrive\\escritorio\\tps\\motores graficos\\simuladores\\madness of forces\\assets\\scenes\\scrips\\jugador\\bala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scrips\\jugador\\bala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|c:\\users\\walte\\onedrive\\escritorio\\tps\\motores graficos\\simuladores\\madness of forces\\assets\\scenes\\scrips\\jugador\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scrips\\jugador\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|c:\\users\\walte\\onedrive\\escritorio\\tps\\motores graficos\\simuladores\\madness of forces\\assets\\scenes\\scrips\\jugador\\weaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scrips\\jugador\\weaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeaponController.cs",
+              "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\Madness of forces\\Assets\\Scenes\\Scrips\\Jugador\\WeaponController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Scrips\\Jugador\\WeaponController.cs",
+              "ToolTip": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\Madness of forces\\Assets\\Scenes\\Scrips\\Jugador\\WeaponController.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Scrips\\Jugador\\WeaponController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAqwDQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T12:27:01.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\Madness of forces\\Assets\\Scenes\\Scrips\\Jugador\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Scrips\\Jugador\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\Madness of forces\\Assets\\Scenes\\Scrips\\Jugador\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Scrips\\Jugador\\PlayerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T12:26:49.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bala.cs",
+              "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\Madness of forces\\Assets\\Scenes\\Scrips\\Jugador\\Bala.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Scrips\\Jugador\\Bala.cs",
+              "ToolTip": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\Madness of forces\\Assets\\Scenes\\Scrips\\Jugador\\Bala.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Scrips\\Jugador\\Bala.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwCIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T12:26:11.923Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

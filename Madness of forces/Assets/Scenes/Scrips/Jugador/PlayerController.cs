@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     private int jumpCount = 0;
     private bool isDashing;
     private float dashTime;
-    private Vector2 lastMoveDirection = Vector2.right;
+    public Vector2 lastMoveDirection = Vector2.right;
 
     // Cámara
     public Transform cameraTransform;
