@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemigoKamikaze : MonoBehaviour
+public class EnemigoKamikaze : MonoBehaviour, IDañable
 {
     // Variables que puedes ajustar desde el Inspector de Unity
     public Transform jugador;      // Para saber a quién seguir.

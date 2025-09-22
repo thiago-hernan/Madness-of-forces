@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ab9559311cbf04f4ead67d993ae0f21b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - jugador: {instanceID: 0}
+  - prefabBala: {fileID: 1102324200444354148, guid: 0825cc48e65923b488b5006b8fdfd10e, type: 3}
+  - puntoDisparo: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

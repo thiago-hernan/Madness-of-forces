@@ -8,27 +8,17 @@ public class Bala : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Mensaje 1: Nos avisa que ha chocado con CUALQUIER COSA.
-        Debug.Log("Bala chocó con: " + other.name);
+        // Ya no buscamos 'EnemigoKamikaze' o 'EnemigoTerrestre'.
+        // Buscamos CUALQUIER componente que cumpla con el contrato 'IDañable'.
+        IDañable enemigo = other.GetComponent<IDañable>();
 
-        // Verificamos si chocamos con un objeto que tenga el tag "Enemy"
-        if (other.CompareTag("Enemy"))
+        // Si el objeto con el que chocamos tiene un componente que se puede dañar...
+        if (enemigo != null)
         {
-            // Mensaje 2: Nos avisa que el objeto SÍ tiene el tag "Enemy".
-            Debug.Log("¡Impacto en un Enemigo!");
+            // ...le decimos que reciba daño, sin importar qué tipo de enemigo sea.
+            enemigo.RecibirDaño(daño);
 
-            EnemigoKamikaze enemigo = other.GetComponent<EnemigoKamikaze>();
-
-            if (enemigo != null)
-            {
-                enemigo.RecibirDaño(daño);
-            }
-            else
-            {
-                // Mensaje 3: Nos avisa si el objeto tiene el tag pero no el script.
-                Debug.Log("ERROR: El objeto tiene tag 'Enemy' pero no el script 'EnemigoKamikaze'.");
-            }
-
+            // Destruimos la bala después de impactar
             Destroy(gameObject);
         }
     }
