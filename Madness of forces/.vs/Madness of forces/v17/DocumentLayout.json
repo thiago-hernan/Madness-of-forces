@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|c:\\users\\walte\\onedrive\\escritorio\\tps\\motores graficos\\simuladores\\tp_comprartido_simuladores\\madness-of-forces\\madness of forces\\assets\\scenes\\scrips\\enemigo\\enemigovolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scrips\\enemigo\\enemigovolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|c:\\users\\walte\\onedrive\\escritorio\\tps\\motores graficos\\simuladores\\tp_comprartido_simuladores\\madness-of-forces\\madness of forces\\assets\\scenes\\scrips\\botoninteractivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scrips\\botoninteractivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|c:\\users\\walte\\onedrive\\escritorio\\tps\\motores graficos\\simuladores\\tp_comprartido_simuladores\\madness-of-forces\\madness of forces\\assets\\scenes\\scrips\\portaldenivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scrips\\portaldenivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\assets\\scenes\\scrips\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scrips\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\assets\\scenes\\scrips\\jugador\\ida\u00F1able.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scrips\\jugador\\ida\u00F1able.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\assets\\scenes\\scrips\\enemigo\\enemigovolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scrips\\enemigo\\enemigovolador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\assets\\scenes\\scrips\\enemigo\\enemigoterrestre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,23 +38,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BotonInteractivo.cs",
+              "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scenes\\Scrips\\BotonInteractivo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Scrips\\BotonInteractivo.cs",
+              "ToolTip": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scenes\\Scrips\\BotonInteractivo.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Scrips\\BotonInteractivo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T20:53:37.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PortalDeNivel.cs",
+              "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scenes\\Scrips\\PortalDeNivel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Scrips\\PortalDeNivel.cs",
+              "ToolTip": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scenes\\Scrips\\PortalDeNivel.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Scrips\\PortalDeNivel.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwD8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T20:51:22.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scenes\\Scrips\\MenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Scrips\\MenuManager.cs",
+              "ToolTip": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scenes\\Scrips\\MenuManager.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Scrips\\MenuManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T20:43:44.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "IDa\u00F1able.cs",
               "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scenes\\Scrips\\Jugador\\IDa\u00F1able.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Scrips\\Jugador\\IDa\u00F1able.cs",
               "ToolTip": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scenes\\Scrips\\Jugador\\IDa\u00F1able.cs",
               "RelativeToolTip": "Assets\\Scenes\\Scrips\\Jugador\\IDa\u00F1able.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T15:44:32.137Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "EnemigoVolador.cs",
               "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scenes\\Scrips\\Enemigo\\EnemigoVolador.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Scrips\\Enemigo\\EnemigoVolador.cs",
@@ -50,12 +100,11 @@
               "RelativeToolTip": "Assets\\Scenes\\Scrips\\Enemigo\\EnemigoVolador.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAHgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T15:06:26.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T15:06:26.227Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "EnemigoTerrestre.cs",
               "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scenes\\Scrips\\Enemigo\\EnemigoTerrestre.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Scrips\\Enemigo\\EnemigoTerrestre.cs",
@@ -67,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Kamikaze.cs",
               "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scenes\\Scrips\\Enemigo\\Kamikaze.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Scrips\\Enemigo\\Kamikaze.cs",

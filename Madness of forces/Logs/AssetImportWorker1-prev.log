@@ -9,13 +9,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.23f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker1
 -projectPath
 C:/Users/walte/OneDrive/Escritorio/TPs/Motores Graficos/Simuladores/TP_comprartido_Simuladores/Madness-of-forces/Madness of forces
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker1.log
 -srvPort
-49487
+56265
 Successfully changed project path to: C:/Users/walte/OneDrive/Escritorio/TPs/Motores Graficos/Simuladores/TP_comprartido_Simuladores/Madness-of-forces/Madness of forces
 C:/Users/walte/OneDrive/Escritorio/TPs/Motores Graficos/Simuladores/TP_comprartido_Simuladores/Madness-of-forces/Madness of forces
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/walte/OneDrive/Escritorio/TPs/Motores Graficos/Simuladores/TP_comprarti
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [3400] Host "[IP] 192.168.1.40 [Port] 0 [Flags] 2 [Guid] 3302887622 [EditorId] 3302887622 [Version] 1048832 [Id] WindowsEditor(7,Thiago) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [5548] Host "[IP] 172.2.170.78 [Port] 0 [Flags] 2 [Guid] 2334489471 [EditorId] 2334489471 [Version] 1048832 [Id] WindowsEditor(7,Thiago) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [3400] Host "[IP] 192.168.1.40 [Port] 0 [Flags] 2 [Guid] 3302887622 [EditorId] 3302887622 [Version] 1048832 [Id] WindowsEditor(7,Thiago) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [5548] Host "[IP] 172.2.170.78 [Port] 0 [Flags] 2 [Guid] 2334489471 [EditorId] 2334489471 [Version] 1048832 [Id] WindowsEditor(7,Thiago) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 216.89 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3222.56 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.23f1 (dbb3f7c5b5c6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56604
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.064165 seconds.
-- Loaded All Assemblies, in  1.130 seconds
+Registered in 0.027963 seconds.
+- Loaded All Assemblies, in  1.258 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.863 seconds
-Domain Reload Profiling: 1990ms
-	BeginReloadAssembly (450ms)
+- Finished resetting the current domain, in  0.974 seconds
+Domain Reload Profiling: 2224ms
+	BeginReloadAssembly (439ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (90ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (210ms)
-	LoadAllAssembliesAndSetupDomain (358ms)
-		LoadAssemblies (442ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (117ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (198ms)
+	LoadAllAssembliesAndSetupDomain (465ms)
+		LoadAssemblies (428ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (350ms)
-			TypeCache.Refresh (346ms)
-				TypeCache.ScanAssembly (307ms)
+		AnalyzeDomain (459ms)
+			TypeCache.Refresh (454ms)
+				TypeCache.ScanAssembly (404ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (2ms)
-	FinalizeReload (864ms)
+	FinalizeReload (975ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (689ms)
+		SetupLoadedEditorAssemblies (741ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (40ms)
-			SetLoadedEditorAssemblies (36ms)
+			InitializePlatformSupportModulesInManaged (38ms)
+			SetLoadedEditorAssemblies (30ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (10ms)
-			ProcessInitializeOnLoadAttributes (443ms)
-			ProcessInitializeOnLoadMethodAttributes (158ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (500ms)
+			ProcessInitializeOnLoadMethodAttributes (165ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -125,51 +125,51 @@ DirectoryNotFoundException: Could not find a part of the path "C:\Users\walte\On
   at UnityEditor.AssemblyValidation.LoadAssemblyDefinitions (System.String[] assemblyPaths, System.String[] searchPaths) [0x00048] in <1899c5bd2a6d466081cd705bee01d689>:0 
   at UnityEditor.AssemblyValidation.ValidateAssemblies (System.String[] assemblyPaths, System.Boolean enableLogging) [0x00007] in <1899c5bd2a6d466081cd705bee01d689>:0 
 
-- Loaded All Assemblies, in  1.250 seconds
-Refreshing native plugins compatible for Editor in 25.62 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.846 seconds
+Refreshing native plugins compatible for Editor in 33.01 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.160 seconds
-Domain Reload Profiling: 2387ms
-	BeginReloadAssembly (300ms)
+- Finished resetting the current domain, in  2.457 seconds
+Domain Reload Profiling: 4258ms
+	BeginReloadAssembly (403ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (19ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (56ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (77ms)
-	LoadAllAssembliesAndSetupDomain (777ms)
-		LoadAssemblies (705ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (108ms)
+	RebuildNativeTypeToScriptingClass (35ms)
+	initialDomainReloadingComplete (138ms)
+	LoadAllAssembliesAndSetupDomain (1115ms)
+		LoadAssemblies (792ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (285ms)
-			TypeCache.Refresh (240ms)
-				TypeCache.ScanAssembly (213ms)
-			ScanForSourceGeneratedMonoScriptInfo (34ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1161ms)
+		AnalyzeDomain (551ms)
+			TypeCache.Refresh (454ms)
+				TypeCache.ScanAssembly (418ms)
+			ScanForSourceGeneratedMonoScriptInfo (72ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (2459ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (885ms)
+		SetupLoadedEditorAssemblies (1905ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (11ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (22ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (177ms)
-			ProcessInitializeOnLoadAttributes (618ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (411ms)
+			ProcessInitializeOnLoadAttributes (1278ms)
+			ProcessInitializeOnLoadMethodAttributes (142ms)
+			AfterProcessingInitializeOnLoad (29ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 17.50 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (20ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 28.23 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4229 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 66 unused Assets / (61.3 KB). Loaded Objects now: 4690.
-Memory consumption went from 151.2 MB to 151.2 MB.
-Total: 8.675300 ms (FindLiveObjects: 0.998500 ms CreateObjectMapping: 0.510800 ms MarkObjects: 6.643200 ms  DeleteObjects: 0.519200 ms)
+Unloading 4228 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 66 unused Assets / (61.1 KB). Loaded Objects now: 4689.
+Memory consumption went from 150.9 MB to 150.8 MB.
+Total: 8.831900 ms (FindLiveObjects: 0.549600 ms CreateObjectMapping: 0.333300 ms MarkObjects: 7.608300 ms  DeleteObjects: 0.337900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -187,44 +187,20 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 598478.663497 seconds.
-  path: Assets/Scenes/Prefabs/Kamikaze.prefab
-  artifactKey: Guid(40aa3e329c6ecd44ea3dafb8c79d9c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Prefabs/Kamikaze.prefab using Guid(40aa3e329c6ecd44ea3dafb8c79d9c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cfbba4e55599bd1e4b7e0d372281879') in 0.242677 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Scenes/Prefabs/Bala.prefab
-  artifactKey: Guid(e8fb587866620c94583e3c72d8537501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Prefabs/Bala.prefab using Guid(e8fb587866620c94583e3c72d8537501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '074fc3f470dadaed6cbfc510bcb37f7e') in 0.036717 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 12
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Scenes/Titulo.png
-  artifactKey: Guid(bcc7d51569b5e814898db3062b82cf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Titulo.png using Guid(bcc7d51569b5e814898db3062b82cf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a61adc7f9457801ef5f40198c83fd9ca') in 0.066849 seconds
+  Time since last request: 56779.851862 seconds.
+  path: Assets/Scenes/CorazonRoto.png
+  artifactKey: Guid(2582ddf86758a3749bfc71b1b3c043fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CorazonRoto.png using Guid(2582ddf86758a3749bfc71b1b3c043fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df2af9f77f1d7e3085ab658ca87388c6') in 0.298568 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Scenes/Escenas/Menu.unity
-  artifactKey: Guid(f1ea3bcb5d718e54197e58589c710fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Escenas/Menu.unity using Guid(f1ea3bcb5d718e54197e58589c710fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6662e7affee12f3d2f15e0577510f118') in 0.001450 seconds
+  Time since last request: 1200.063171 seconds.
+  path: Assets/Scenes/Prefabs/Enemigo.prefab
+  artifactKey: Guid(e764d52898d7b32409eb70fc741182dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Prefabs/Enemigo.prefab using Guid(e764d52898d7b32409eb70fc741182dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18c0dd69908ed9141847128bfec81d04') in 0.676054 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 42.543661 seconds.
-  path: Assets/Scenes/Menu de pausa.jpg
-  artifactKey: Guid(0a8fb6aba88c2a44f83d5615c049b5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Menu de pausa.jpg using Guid(0a8fb6aba88c2a44f83d5615c049b5ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '399eb45de7ba0311a476937400fa6284') in 0.041128 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 16
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
 AssetImportWorker is now disconnected from the server
