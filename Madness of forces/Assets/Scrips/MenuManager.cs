@@ -11,6 +11,11 @@ public class MenuManager : MonoBehaviour
         // Carga la escena que se llama "Sandbox". Asegúrate de que el nombre es exacto.
         SceneManager.LoadScene("Sandbox");
     }
+    public void IniciarTutorial()
+    {
+        // Carga la escena que se llama "Sandbox". Asegúrate de que el nombre es exacto.
+        SceneManager.LoadScene("Tutorial");
+    }
 
     // Esta función la llamará el botón "Quit"
     public void SalirDelJuego()

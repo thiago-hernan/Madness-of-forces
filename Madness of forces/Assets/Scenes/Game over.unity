@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 735944171}
   - component: {fileID: 735944170}
   m_Layer: 0
-  m_Name: ControladorDeEscena
+  m_Name: Reinicio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

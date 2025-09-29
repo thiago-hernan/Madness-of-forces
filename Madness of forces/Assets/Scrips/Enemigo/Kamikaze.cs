@@ -9,8 +9,9 @@ public class EnemigoKamikaze : MonoBehaviour, IDañable
     public float velocidad = 4f;   // Qué tan rápido se mueve.
     public int vida = 2;           // Los golpes que aguanta antes de destruirse.
     public AudioClip sonidoMuerte;
-
+    public int sugarDropAmount = 6;
     private Rigidbody2D rb;
+    private bool haMuerto = false;
 
     // Start se ejecuta una sola vez al principio
     void Start()
@@ -66,6 +67,7 @@ public class EnemigoKamikaze : MonoBehaviour, IDañable
     // Esta es una función PÚBLICA, lo que significa que otros scripts (como el de la bala) pueden llamarla.
     public void RecibirDaño(int cantidad)
     {
+        if (haMuerto) return;
         vida -= cantidad; // Restamos la vida
 
         if (vida <= 0)
@@ -76,12 +78,14 @@ public class EnemigoKamikaze : MonoBehaviour, IDañable
 
     void Morir()
     {
+        haMuerto = true;
+
         if (sonidoMuerte != null)
         {
             AudioSource.PlayClipAtPoint(sonidoMuerte, transform.position);
         }
+        CurrencyManager.instance.AddSugar(sugarDropAmount);
 
-        // Ahora sí, destruye el objeto del enemigo
         Destroy(gameObject);
     }
 }

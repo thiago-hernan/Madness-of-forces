@@ -13,12 +13,15 @@ public class EnemigoTerrestre : MonoBehaviour, IDañable
     [Header("Componentes")]
     public Transform gafas;
     public Transform jugador;
-
+    private bool haMuerto = false;
     // --- Variables Internas ---
     private Rigidbody2D rb;
     private bool mirandoDerecha = true;
     private int vidaActual; // NUEVO: La vida actual que tiene el enemigo.
     public AudioClip sonidoMuerte;
+    public int sugarDropAmount = 5;
+
+
 
     void Start()
     {
@@ -74,6 +77,7 @@ public class EnemigoTerrestre : MonoBehaviour, IDañable
     // Esta es la función que tu bala buscará y llamará.
     public void RecibirDaño(int cantidad)
     {
+        if (haMuerto) return;
         vidaActual -= cantidad;
 
         if (vidaActual <= 0)
@@ -84,13 +88,14 @@ public class EnemigoTerrestre : MonoBehaviour, IDañable
 
     void Morir()
     {
-        // Reproduce el sonido en la posición actual del enemigo
+        haMuerto = true;
+
         if (sonidoMuerte != null)
         {
             AudioSource.PlayClipAtPoint(sonidoMuerte, transform.position);
         }
+        CurrencyManager.instance.AddSugar(sugarDropAmount);
 
-        // Ahora sí, destruye el objeto del enemigo
         Destroy(gameObject);
     }
 }
