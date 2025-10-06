@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponController : MonoBehaviour
 {
-    // NUEVO: Enum para definir nuestros tipos de armas de forma clara.
+    // Enum para definir nuestros tipos de armas de forma clara.
     public enum WeaponType { Normal, Potente, Escopeta, Rapida }
 
     [Header("Configuración General")]
@@ -15,18 +15,17 @@ public class WeaponController : MonoBehaviour
     public float bulletLifeTime = 1.5f;
     public AudioClip sonidoDisparo;
     private AudioSource audioSource;
-    private float fireTimer; // MODIFICADO: Ahora es un temporizador general.
+    private float fireTimer;
 
     [Header("Gestión de Armas")]
-    // NUEVO: Lista de armas que el jugador ha desbloqueado.
+    // Lista de armas que el jugador ha desbloqueado en ESTA PARTIDA.
     public List<WeaponType> unlockedWeapons = new List<WeaponType>();
-    // NUEVO: Índice para saber qué arma de la lista estamos usando.
     private int currentWeaponIndex = 0;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        // NUEVO: Nos aseguramos de que el jugador siempre empiece con el arma normal.
+        // Nos aseguramos de que el jugador siempre empiece con el arma normal.
         if (!unlockedWeapons.Contains(WeaponType.Normal))
         {
             unlockedWeapons.Add(WeaponType.Normal);
@@ -43,7 +42,7 @@ public class WeaponController : MonoBehaviour
             Shoot();
         }
 
-        // NUEVO: Lógica para cambiar de arma con la rueda del ratón.
+        // Lógica para cambiar de arma con la rueda del ratón.
         if (Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
             SwitchWeapon(1);
@@ -54,17 +53,15 @@ public class WeaponController : MonoBehaviour
         }
     }
 
-    // MODIFICADO: ¡Esta es la función principal que ha cambiado!
     void Shoot()
     {
         // Obtenemos el tipo de arma actual de nuestra lista de desbloqueadas.
         WeaponType currentWeapon = unlockedWeapons[currentWeaponIndex];
-        audioSource.PlayOneShot(sonidoDisparo); // El sonido se reproduce igual para todas.
+        if (sonidoDisparo != null) audioSource.PlayOneShot(sonidoDisparo);
 
         // Usamos un 'switch' para decidir qué hacer según el arma equipada.
         switch (currentWeapon)
         {
-            // CASO 1: Arma Normal (TU CÓDIGO ORIGINAL ESTÁ AQUÍ)
             case WeaponType.Normal:
                 fireTimer = 0.5f; // Cadencia de disparo
                 GameObject bulletNormal = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
@@ -76,11 +73,9 @@ public class WeaponController : MonoBehaviour
                 Destroy(bulletNormal, bulletLifeTime);
                 break;
 
-            // CASO 2: Arma Lenta y Potente
             case WeaponType.Potente:
                 fireTimer = 1.5f; // Cadencia muy lenta
                 GameObject bulletPotente = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-                // Hacemos la bala más grande y rápida para que se sienta potente
                 bulletPotente.transform.localScale = new Vector3(2, 2, 2);
                 Rigidbody2D rbPotente = bulletPotente.GetComponent<Rigidbody2D>();
                 if (rbPotente != null)
@@ -90,17 +85,14 @@ public class WeaponController : MonoBehaviour
                 Destroy(bulletPotente, bulletLifeTime);
                 break;
 
-            // CASO 3: Escopeta
             case WeaponType.Escopeta:
                 fireTimer = 0.8f; // Cadencia media
-                // Creamos 5 balas en un bucle
                 for (int i = 0; i < 5; i++)
                 {
                     GameObject bulletEscopeta = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
                     Rigidbody2D rbEscopeta = bulletEscopeta.GetComponent<Rigidbody2D>();
                     if (rbEscopeta != null)
                     {
-                        // Creamos una pequeña desviación aleatoria para cada bala
                         Vector2 spread = new Vector2(Random.Range(-0.3f, 0.3f), Random.Range(-0.3f, 0.3f));
                         Vector2 direction = (playerController.lastMoveDirection + spread).normalized;
                         rbEscopeta.AddForce(direction * bulletSpeed, ForceMode2D.Impulse);
@@ -109,11 +101,9 @@ public class WeaponController : MonoBehaviour
                 }
                 break;
 
-            // CASO 4: Cadencia Alta
             case WeaponType.Rapida:
                 fireTimer = 0.1f; // Cadencia muy rápida
                 GameObject bulletRapida = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-                // Hacemos la bala más pequeña para que se sienta menos dañina
                 bulletRapida.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
                 Rigidbody2D rbRapida = bulletRapida.GetComponent<Rigidbody2D>();
                 if (rbRapida != null)
@@ -125,7 +115,6 @@ public class WeaponController : MonoBehaviour
         }
     }
 
-    // NUEVO: Función para cambiar entre las armas desbloqueadas.
     void SwitchWeapon(int direction)
     {
         currentWeaponIndex += direction;
@@ -140,7 +129,6 @@ public class WeaponController : MonoBehaviour
         Debug.Log("Arma cambiada a: " + unlockedWeapons[currentWeaponIndex]);
     }
 
-    // NUEVO: Función PÚBLICA para que la tienda pueda desbloquear armas.
     public void UnlockWeapon(WeaponType weapon)
     {
         if (!unlockedWeapons.Contains(weapon))
