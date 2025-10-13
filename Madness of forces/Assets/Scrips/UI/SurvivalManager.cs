@@ -62,7 +62,7 @@ public class SurvivalManager : MonoBehaviour
             }
             else
             {
-                timerText.text = "RAPIDO, LA SALIDA YA ESTA DISPONIBLE, CORREEEE";
+                timerText.text = "SALIDA DISPONIBLE";
             }
         }
     }

@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|c:\\users\\walte\\onedrive\\escritorio\\tps\\motores graficos\\simuladores\\tp_comprartido_simuladores\\madness-of-forces\\madness of forces\\assets\\scrips\\jugador\\weaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|c:\\users\\walte\\onedrive\\escritorio\\tps\\motores graficos\\simuladores\\tp_comprartido_simuladores\\madness-of-forces\\madness of forces\\assets\\scrips\\ui\\survivalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\ui\\survivalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\walte\\onedrive\\escritorio\\tps\\motores graficos\\simuladores\\tp_comprartido_simuladores\\madness-of-forces\\madness of forces\\assets\\scrips\\backgroound\\survivalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scrips\\backgroound\\survivalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\assets\\scrips\\jugador\\weaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CEF9C749-50F0-1380-0BAA-A8F5C2E4DC14}|Assembly-CSharp.csproj|solutionrelative:assets\\scrips\\jugador\\weaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,6 +39,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SurvivalManager.cs",
+              "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scrips\\UI\\SurvivalManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrips\\UI\\SurvivalManager.cs",
+              "ToolTip": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scrips\\UI\\SurvivalManager.cs",
+              "RelativeToolTip": "Assets\\Scrips\\UI\\SurvivalManager.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAQwEAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T13:03:16.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SurvivalManager.cs",
+              "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scrips\\backgroound\\SurvivalManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrips\\backgroound\\SurvivalManager.cs",
+              "ToolTip": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scrips\\backgroound\\SurvivalManager.cs",
+              "RelativeToolTip": "Assets\\Scrips\\backgroound\\SurvivalManager.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAgwEAAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T15:05:36.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "WeaponController.cs",
               "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scrips\\Jugador\\WeaponController.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\Jugador\\WeaponController.cs",
@@ -38,12 +71,11 @@
               "RelativeToolTip": "Assets\\Scrips\\Jugador\\WeaponController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T13:02:40.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-06T13:02:40.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SaveManager.cs",
               "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scrips\\SaveManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\SaveManager.cs",
@@ -55,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CurrencyManager.cs",
               "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scrips\\CurrencyManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\CurrencyManager.cs",
@@ -67,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SpawnerSimple.cs",
               "DocumentMoniker": "C:\\Users\\walte\\OneDrive\\Escritorio\\TPs\\Motores Graficos\\Simuladores\\TP_comprartido_Simuladores\\Madness-of-forces\\Madness of forces\\Assets\\Scrips\\backgroound\\SpawnerSimple.cs",
               "RelativeDocumentMoniker": "Assets\\Scrips\\backgroound\\SpawnerSimple.cs",
